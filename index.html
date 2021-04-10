@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Bootstrap 4 Sidebar Menu Responsive with Sub menu Create Responsive Side
+      Navigation
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-white" id="sidebar">
+      <div id="dismiss">
+        <i class="fa fa-arrow-left"></i>
+      </div>
+      <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
+        Landscapes
+      </p>
+
+      <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+          <a href="#river" class="nav-link text-dark bg-light text-uppercase">
+                    <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                    river
+                </a>
+        </li>
+        <li class="nav-item">
+          <a href="#city" class="nav-link text-dark text-uppercase">
+                    <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                    city
+                </a>
+        </li>
+        <li class="nav-item">
+          <a href="#mountain" class="nav-link text-dark text-uppercase">
+                    <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                    mountain
+                </a>
+        </li>
+        <li class="nav-item">
+          <a href="#bridge" class="nav-link text-dark text-uppercase">
+                    <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                    bridge
+                </a>
+        </li>
+      </ul>
+
+      <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">
+        sports
+      </p>
+
+      <ul class="nav flex-column bg-white mb-0">
+        <li class="nav-item">
+          <a href="#ride" class="nav-link text-dark text-uppercase">
+            <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+            ride
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#surf" class="nav-link text-dark text-uppercase">
+            <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+            surf
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#climb" class="nav-link text-dark text-uppercase">
+            <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+            climb
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#bike" class="nav-link text-dark text-uppercase">
+            <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+            bike
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End vertical navbar -->
+
+    <!-- Page content holder -->
+    <div class="page-content p-5" id="content">
+      <!-- Toggle button -->
+      <button
+        id="sidebarCollapse"
+        type="button"
+        class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"
+      >
+        <i class="fa fa-bars mr-2"></i
+        ><small class="text-uppercase font-weight-bold"></small>
+      </button>
+
+      <h2 class="display-4 text-white">LandScapes Views</h2>
+      <div class="separator" id="river"></div>
+      <p class="lead text-white mb-0">First image for landScape pictures .</p>
+      <img src="img/river.jpg" class="img-fluid rounded" />
+      <div class="separator" id="city"></div>
+      <p class="lead text-white mb-0">Second image for landScape pictures .</p>
+      <img src="img/city.jpg" class="img-fluid rounded" />
+      <div class="separator" id="mountain"></div>
+      <p class="lead text-white mb-0">Third image for landScape pictures .</p>
+      <img src="img/mountain.jpg" class="img-fluid rounded" />
+      <div class="separator" id="bridge"></div>
+      <p class="lead text-white mb-0">Four image for landScape pictures .</p>
+      <img src="img/bridge.jpg" class="img-fluid rounded" />
+
+
+      <div class="separator"></div>
+      <h2 class="display-4 text-white">Sports Views</h2>
+
+
+      <div class="separator" id="ride"></div>
+      <p class="lead text-white mb-0">First image for Sport pictures .</p>
+      <img src="img/ride.jpg" class="img-fluid rounded" />
+      <div class="separator" id="surf"></div>
+      <p class="lead text-white mb-0">Second image for Sport pictures .</p>
+      <img src="img/surf.jpg" class="img-fluid rounded" />
+
+      <div class="separator" id="climb"></div>
+      <p class="lead text-white mb-0">Third image for Sport pictures .</p>
+      <img src="img/climb.jpg" class="img-fluid rounded" />
+
+      <div class="separator" id="bike"></div>
+      <p class="lead text-white mb-0">Four image for Sport pictures .</p>
+      <img src="img/bike.jpg" class="img-fluid rounded" />
+      <div class="separator"></div>
+
+    </div>
+    <!-- End content -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
